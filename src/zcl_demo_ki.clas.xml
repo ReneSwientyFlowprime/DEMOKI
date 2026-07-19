@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+ <asx:values>
+  <VSEOCLASS>
+   <CLSNAME>ZCL_DEMO_KI</CLSNAME>
+   <LANGU>E</LANGU>
+   <DESCRIPT>Demo KI – EWM HU Movement</DESCRIPT>
+   <STATE>1</STATE>
+   <CLSCCINCL>X</CLSCCINCL>
+   <FIXPT>X</FIXPT>
+   <HIDDENINTERFACES/>
+   <CLSFINAL>X</CLSFINAL>
+   <CLSABSTRCT/>
+   <EXPOSURE>2</EXPOSURE>
+   <VERSION>1</VERSION>
+   <UNICODE>X</UNICODE>
+  </VSEOCLASS>
+ </asx:values>
+</asx:abap>
