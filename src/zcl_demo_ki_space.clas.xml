@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_DEMO_KI_SPACE</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Demo KI Space – Handling Unit Movement</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <HIDECLSNAME> </HIDECLSNAME>
+    <CLSFINAL>X</CLSFINAL>
+    <CLSABSTRCT> </CLSABSTRCT>
+    <WITH_UNIT_TESTS> </WITH_UNIT_TESTS>
+    <CATEGORY>00</CATEGORY>
+    <EXPOSURE>2</EXPOSURE>
+    <R3RELEASE>758</R3RELEASE>
+    <AUTHOR>DEVELOPER</AUTHOR>
+    <CREATEDON>20260719</CREATEDON>
+    <CHANGEDBY>DEVELOPER</CHANGEDBY>
+    <CHANGEDON>20260719</CHANGEDON>
+    <CHGDTIMSTMP>0</CHGDTIMSTMP>
+    <CLSIMPLTPE>00</CLSIMPLTPE>
+    <CLSGENFLAG> </CLSGENFLAG>
+    <CLSGENTYP>00</CLSGENTYP>
+   </VSEOCLASS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
