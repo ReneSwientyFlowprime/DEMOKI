@@ -1,0 +1,30 @@
+managed;
+strict(2);
+
+define behavior for ZI_RefDocPhoto alias Photo
+persistent table zrefdoc_photo
+lock dependent by _RefDoc
+authorization dependent by _RefDoc
+etag master LocalLastChangedAt
+{
+  update;
+  delete;
+
+  association _RefDoc;
+
+  field ( readonly )   PhotoUUID, RefDocUUID, CreatedBy, CreatedAt, LocalLastChangedAt;
+  field ( mandatory )  Comment;
+
+  mapping for zrefdoc_photo
+  {
+    PhotoUUID             = photo_uuid;
+    RefDocUUID              = refdoc_uuid;
+    Photo                     = photo;
+    MimeType                    = mime_type;
+    FileName                      = file_name;
+    Comment                         = comment;
+    CreatedBy                         = created_by;
+    CreatedAt                           = created_at;
+    LocalLastChangedAt                    = local_last_changed_at;
+  }
+}

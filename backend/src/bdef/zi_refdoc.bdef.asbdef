@@ -1,0 +1,30 @@
+managed;
+strict(2);
+
+define behavior for ZI_RefDoc alias RefDoc
+persistent table zrefdoc_h
+lock master
+authorization master( instance )
+etag master LocalLastChangedAt
+{
+  create;
+  update;
+  delete;
+
+  association _Photo { create; }
+
+  field ( readonly )            RefDocUUID, CreatedBy, CreatedAt, LastChangedBy, LastChangedAt, LocalLastChangedAt;
+  field ( mandatory : create )  ReferenceType, ReferenceNumber;
+
+  mapping for zrefdoc_h
+  {
+    RefDocUUID           = refdoc_uuid;
+    ReferenceType         = ref_type;
+    ReferenceNumber        = ref_number;
+    CreatedBy                = created_by;
+    CreatedAt                 = created_at;
+    LastChangedBy               = last_changed_by;
+    LastChangedAt                = last_changed_at;
+    LocalLastChangedAt             = local_last_changed_at;
+  }
+}

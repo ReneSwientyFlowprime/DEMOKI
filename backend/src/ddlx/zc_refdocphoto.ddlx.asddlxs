@@ -1,0 +1,43 @@
+@Metadata.layer: #CORE
+
+@UI.mediaResource: { stream: 'Photo' }
+
+annotate entity ZC_RefDocPhoto with
+{
+  @UI.facet: [
+    { id: 'PhotoDetails',
+      purpose: #STANDARD,
+      type: #FIELDGROUP_REFERENCE,
+      targetQualifier: 'PhotoDetails',
+      label: 'Foto',
+      position: 10 }
+  ]
+
+  @UI.lineItem: [ { position: 10, label: 'Foto' } ]
+  @UI.fieldGroup: [ { qualifier: 'PhotoDetails', position: 10, label: 'Foto' } ]
+  Photo;
+
+  @UI.lineItem: [ { position: 20, label: 'Dateiname' } ]
+  @UI.fieldGroup: [ { qualifier: 'PhotoDetails', position: 20, label: 'Dateiname' } ]
+  FileName;
+
+  @UI.hidden: true
+  MimeType;
+
+  @UI.lineItem: [ { position: 30, label: 'Kommentar' } ]
+  @UI.fieldGroup: [ { qualifier: 'PhotoDetails', position: 30, label: 'Kommentar' } ]
+  @UI.multiLineText: true
+  Comment;
+
+  @UI.lineItem: [ { position: 40, label: 'Hochgeladen von' } ]
+  CreatedBy;
+
+  @UI.lineItem: [ { position: 50, label: 'Hochgeladen am' } ]
+  CreatedAt;
+
+  @UI.hidden: true
+  RefDocUUID;
+
+  @UI.hidden: true
+  LocalLastChangedAt;
+}

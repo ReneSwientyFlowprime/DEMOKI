@@ -1,0 +1,11 @@
+projection;
+strict(2);
+
+define behavior for ZC_RefDoc alias RefDoc
+{
+  use create;
+  use update;
+  use delete;
+
+  use association _Photo { create; }
+}
